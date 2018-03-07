@@ -22,7 +22,6 @@
     "test": "mocha",
     "test:all": "mocha ./test/**/*.spec.js",
     "test:browser": "run-p build:test sync:test",
-
     "build:test": "rollup -c rollup.config.test.js --watch",
     "sync:test": "browser-sync start --files build/test-bundle.js --server . --index ./test/index.html",
     "postinstall": "rollup-watch-fix"

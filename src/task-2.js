@@ -1,6 +1,8 @@
 
 export default function createCounter(n) {
-    // Change me!
+    let count = -n;
 
-    return function() {};
+    return function() {
+        return count += n;
+    };
 }

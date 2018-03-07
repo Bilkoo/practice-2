@@ -1,16 +1,10 @@
-function getExpeditionsTargets(commandSeries) {
-    // Change me!
+import runRover from "./task-4";
+import boundingRect from "./task-3.js"
 
-    return [];
+function getExpeditionsTargets(commandSeries) {
+    return commandSeries.map(x => runRover(x));
 }
 
 export default function boundingRover(commandSeries) {
-    // Change me!
-
-    return {
-        top: 0,
-        right: 0,
-        bottom: 0,
-        left: 0
-    };
+    return boundingRect(getExpeditionsTargets(commandSeries));
 }
